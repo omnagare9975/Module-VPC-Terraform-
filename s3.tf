@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3main" {
-  bucket = "storing-the-backend-data"
+  bucket = "storing-the-backend-source"
 
   
   
@@ -24,7 +24,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "serverside" {
 
 
 resource "aws_dynamodb_table" "name" {
-  name = "lock-state-for-Terraform"
+  name = "lock-state-for-Terraforms"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "LockID"
 
